@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Ilustração de doces sírios: knefe quentinho com pistache, baklava e café árabe">
+  <defs>
+    <radialGradient id="sweetsBg" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#482c1d" />
+      <stop offset="100%" stop-color="#1b100b" />
+    </radialGradient>
+    <radialGradient id="brassTray" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#f3d28e" />
+      <stop offset="60%" stop-color="#c18d3e" />
+      <stop offset="100%" stop-color="#7c541b" />
+    </radialGradient>
+    <linearGradient id="knefeGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e59a38" />
+      <stop offset="100%" stop-color="#b8601b" />
+    </linearGradient>
+    <linearGradient id="baklavaGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f1c774" />
+      <stop offset="100%" stop-color="#b57724" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sweetsBg)" />
+
+  <!-- Ornate Brass Dessert Plate -->
+  <circle cx="345" cy="316" r="228" fill="#0d0604" opacity="0.55" />
+  <circle cx="345" cy="300" r="222" fill="url(#brassTray)" />
+  <circle cx="345" cy="300" r="196" fill="#2b1b13" stroke="#f0cd87" stroke-width="2" stroke-opacity="0.7" />
+
+  <!-- Knefe Slice -->
+  <g transform="translate(275, 275)">
+    <rect x="-110" y="-82" width="180" height="145" rx="14" fill="url(#knefeGold)" stroke="#f6cf7e" stroke-width="2" />
+    <!-- Cheese edge -->
+    <rect x="-106" y="42" width="172" height="18" rx="6" fill="#fff3d6" opacity="0.9" />
+    <!-- Crushed green pistachios on top -->
+    <g fill="#6ea441">
+      <circle cx="-55" cy="-35" r="7" />
+      <circle cx="-35" cy="-42" r="5" />
+      <circle cx="-18" cy="-26" r="8" />
+      <circle cx="8" cy="-38" r="6" />
+      <circle cx="24" cy="-22" r="7" />
+      <circle cx="-40" cy="-10" r="6" />
+      <circle cx="-8" cy="-6" r="7" />
+      <circle cx="18" cy="4" r="5" />
+    </g>
+    <!-- Rose petals -->
+    <ellipse cx="-20" cy="-35" rx="7" ry="4" fill="#c73d59" transform="rotate(25 -20 -35)" />
+    <ellipse cx="14" cy="-16" rx="6" ry="3.5" fill="#c73d59" transform="rotate(-20 14 -16)" />
+  </g>
+
+  <!-- Baklava Diamonds -->
+  <g transform="translate(435, 240)">
+    <polygon points="0,-48 48,0 0,48 -48,0" fill="url(#baklavaGold)" stroke="#fae0a5" stroke-width="2" />
+    <circle cx="0" cy="0" r="14" fill="#6ea441" />
+  </g>
+  <g transform="translate(435, 355)">
+    <polygon points="0,-48 48,0 0,48 -48,0" fill="url(#baklavaGold)" stroke="#fae0a5" stroke-width="2" />
+    <circle cx="0" cy="0" r="14" fill="#6ea441" />
+  </g>
+
+  <!-- Arabic Coffee Finjan Cup -->
+  <g transform="translate(625, 360)">
+    <circle cx="0" cy="10" r="90" fill="#0d0604" opacity="0.5" />
+    <circle cx="0" cy="0" r="86" fill="url(#brassTray)" />
+    <circle cx="0" cy="0" r="64" fill="#f7f2ea" stroke="#c18d3e" stroke-width="3" />
+    <circle cx="0" cy="0" r="52" fill="#2a160e" />
+    <circle cx="-12" cy="-12" r="16" fill="#693e24" opacity="0.65" />
+    <circle cx="14" cy="10" r="8" fill="#512c17" opacity="0.7" />
+  </g>
+</svg>

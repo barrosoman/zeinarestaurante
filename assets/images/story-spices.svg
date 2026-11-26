@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 880" role="img" aria-label="Ilustração de especiarias sírias: sumagre, za'atar, pistache, romã e azeite">
+  <defs>
+    <linearGradient id="oakBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3f2a1f" />
+      <stop offset="100%" stop-color="#221610" />
+    </linearGradient>
+    <radialGradient id="lightArch" cx="50%" cy="22%" r="60%">
+      <stop offset="0%" stop-color="#f6d59d" stop-opacity="0.28" />
+      <stop offset="100%" stop-color="#221610" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="sumacBowl" cx="45%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#b43c2c" />
+      <stop offset="100%" stop-color="#691c14" />
+    </radialGradient>
+    <radialGradient id="zaatarBowl" cx="45%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#708045" />
+      <stop offset="100%" stop-color="#3c4820" />
+    </radialGradient>
+    <radialGradient id="turmericBowl" cx="45%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#e3a93b" />
+      <stop offset="100%" stop-color="#9e6714" />
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="880" fill="url(#oakBg)" />
+  <rect width="800" height="880" fill="url(#lightArch)" />
+
+  <!-- Subtle wooden board lines -->
+  <g stroke="#1a100b" stroke-opacity="0.45" stroke-width="2">
+    <line x1="0" y1="220" x2="800" y2="220" />
+    <line x1="0" y1="450" x2="800" y2="450" />
+    <line x1="0" y1="680" x2="800" y2="680" />
+  </g>
+
+  <!-- Ceramic Platter Base -->
+  <ellipse cx="400" cy="450" rx="310" ry="330" fill="#efe4d2" opacity="0.08" stroke="#d5ab66" stroke-opacity="0.35" stroke-width="2" />
+
+  <!-- Top Center: Sumac Spice Bowl -->
+  <g transform="translate(400, 240)">
+    <circle cx="0" cy="12" r="106" fill="#120b07" opacity="0.55" />
+    <circle cx="0" cy="0" r="102" fill="#f4ede1" stroke="#c18d3e" stroke-width="3" />
+    <circle cx="0" cy="0" r="84" fill="url(#sumacBowl)" />
+    <circle cx="-18" cy="-16" r="12" fill="#c94f3d" opacity="0.5" />
+    <circle cx="24" cy="16" r="4" fill="#f3d49b" opacity="0.6" />
+    <circle cx="-26" cy="22" r="3" fill="#f3d49b" opacity="0.6" />
+  </g>
+
+  <!-- Left: Za'atar Bowl -->
+  <g transform="translate(225, 455)">
+    <circle cx="0" cy="10" r="96" fill="#120b07" opacity="0.55" />
+    <circle cx="0" cy="0" r="92" fill="#f4ede1" stroke="#566341" stroke-width="3" />
+    <circle cx="0" cy="0" r="76" fill="url(#zaatarBowl)" />
+    <!-- Sesame seeds in za'atar -->
+    <g fill="#f1dfba">
+      <ellipse cx="-22" cy="-14" rx="4" ry="2" transform="rotate(30 -22 -14)" />
+      <ellipse cx="14" cy="-20" rx="4" ry="2" transform="rotate(-20 14 -20)" />
+      <ellipse cx="24" cy="12" rx="4" ry="2" transform="rotate(55 24 12)" />
+      <ellipse cx="-10" cy="22" rx="4" ry="2" transform="rotate(-40 -10 22)" />
+      <ellipse cx="4" cy="2" rx="4" ry="2" transform="rotate(15 4 2)" />
+    </g>
+  </g>
+
+  <!-- Right: Pistachios & Spices Bowl -->
+  <g transform="translate(575, 455)">
+    <circle cx="0" cy="10" r="96" fill="#120b07" opacity="0.55" />
+    <circle cx="0" cy="0" r="92" fill="#f4ede1" stroke="#c18d3e" stroke-width="3" />
+    <circle cx="0" cy="0" r="76" fill="url(#turmericBowl)" />
+    <!-- Shelled green pistachios -->
+    <g fill="#7fa34d" stroke="#4b6626" stroke-width="1">
+      <ellipse cx="-18" cy="-12" rx="11" ry="7" transform="rotate(-25 -18 -12)" />
+      <ellipse cx="16" cy="-14" rx="11" ry="7" transform="rotate(20 16 -14)" />
+      <ellipse cx="0" cy="8" rx="12" ry="7" transform="rotate(10 0 8)" />
+      <ellipse cx="-22" cy="20" rx="10" ry="6" transform="rotate(42 -22 20)" />
+      <ellipse cx="22" cy="18" rx="10" ry="6" transform="rotate(-35 22 18)" />
+    </g>
+  </g>
+
+  <!-- Bottom: Cut Pomegranate & Olive Oil Carafe -->
+  <g transform="translate(320, 665)">
+    <circle cx="0" cy="8" r="76" fill="#120b07" opacity="0.5" />
+    <circle cx="0" cy="0" r="70" fill="#8b1e24" />
+    <circle cx="0" cy="0" r="56" fill="#f3dfc1" />
+    <!-- Ruby pomegranate arils -->
+    <g fill="#b51c27">
+      <circle cx="-18" cy="-18" r="7" />
+      <circle cx="-4" cy="-24" r="7" />
+      <circle cx="14" cy="-16" r="7" />
+      <circle cx="-24" cy="0" r="7" />
+      <circle cx="-8" cy="-2" r="7" />
+      <circle cx="12" cy="2" r="7" />
+      <circle cx="24" cy="-4" r="6" />
+      <circle cx="-16" cy="18" r="7" />
+      <circle cx="2" cy="22" r="7" />
+      <circle cx="18" cy="16" r="7" />
+    </g>
+  </g>
+
+  <g transform="translate(505, 650)">
+    <circle cx="0" cy="14" r="68" fill="#120b07" opacity="0.45" />
+    <circle cx="0" cy="0" r="62" fill="#e5d3b3" stroke="#c18d3e" stroke-width="2.5" />
+    <circle cx="0" cy="0" r="46" fill="#9ca436" />
+    <circle cx="-14" cy="-14" r="10" fill="#cfd663" opacity="0.55" />
+  </g>
+</svg>

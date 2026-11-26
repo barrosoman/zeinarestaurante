@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zeina Restaurante | Comida Árabe e Síria Autêntica em São José do Rio Preto</title>
+  <meta
+    name="description"
+    content="Zeina Restaurante: culinária árabe e síria autêntica preparada por família síria em São José do Rio Preto, SP. Mezze, esfihas artesanais, grelhados na brasa, kibe e doces sírios."
+  />
+  <meta property="og:title" content="Zeina Restaurante — Cozinha Síria em São José do Rio Preto" />
+  <meta
+    property="og:description"
+    content="Receitas tradicionais da Síria com hospitalidade acolhedora em São José do Rio Preto. Conheça nosso cardápio e faça sua reserva."
+  />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Geometric Damascene top accent -->
+  <div class="top-ribbon" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="site-header" id="topo">
+    <div class="container header-inner">
+      <a href="#topo" class="brand" aria-label="Zeina Restaurante - Página inicial">
+        <span class="brand-emblem" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="36" height="36" fill="none">
+            <path d="M9 33V19C9 12.2 14 7.5 20 5C26 7.5 31 12.2 31 19V33" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+            <path d="M6 33H34" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+            <path d="M20 27C20 21 20 16 20 12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+            <path d="M20 22C16.5 21.5 14.5 19 14.5 16.5C17 16.5 19.5 18.5 20 22Z" fill="currentColor" opacity="0.85" />
+            <path d="M20 19C23.5 18.5 25.5 16 25.5 13.5C23 13.5 20.5 15.5 20 19Z" fill="currentColor" opacity="0.85" />
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-title">Zeina Restaurante</span>
+          <span class="brand-sub">Culinária Síria • <span lang="ar" dir="rtl" class="arabic-inline">زينة</span></span>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Navegação principal">
+        <a href="#historia">Nossa História</a>
+        <a href="#especialidades">Especialidades</a>
+        <a href="#cardapio">Cardápio</a>
+        <a href="#eventos">Eventos</a>
+        <a href="#contato">Localização</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="btn btn-outline btn-sm cart-trigger" id="open-cart-btn" aria-label="Abrir lista de pedido">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M6 7h12l-1 13H7L6 7Z" />
+            <path d="M9 7V5a3 3 0 0 1 6 0v2" />
+          </svg>
+          <span>Pedido</span>
+          <span class="cart-badge" id="cart-count">0</span>
+        </button>
+        <a href="#reservar" class="btn btn-primary btn-sm hide-mobile">Reservar Mesa</a>
+        <button
+          type="button"
+          class="mobile-menu-btn"
+          id="mobile-menu-toggle"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+          aria-label="Abrir menu de navegação"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav" id="mobile-nav" hidden>
+      <a href="#historia">Nossa História</a>
+      <a href="#especialidades">Especialidades</a>
+      <a href="#cardapio">Cardápio</a>
+      <a href="#eventos">Encomendas & Eventos</a>
+      <a href="#contato">Localização & Horários</a>
+      <a href="#reservar" class="btn btn-primary">Reservar Mesa</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" aria-label="Apresentação do Zeina Restaurante">
+      <div class="hero-media">
+        <img
+          src="assets/images/hero-mezze.svg"
+          alt="Ilustração de mesa farta de culinária síria no Zeina Restaurante com homus, muhammara, tabule e pão sírio"
+          loading="eager"
+        />
+        <div class="hero-overlay" aria-hidden="true"></div>
+      </div>
+
+      <div class="container hero-content">
+        <div class="hero-badge-row">
+          <span class="location-pill">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M12 21s-7-6.2-7-11.5a7 7 0 1 1 14 0C19 14.8 12 21 12 21Z" />
+              <circle cx="12" cy="9.5" r="2.5" />
+            </svg>
+            Centro • São José do Rio Preto, SP
+          </span>
+          <span class="arabic-greeting" lang="ar" dir="rtl">أهلاً وسهلاً بكم</span>
+        </div>
+
+        <h1>A alma da cozinha síria à mesa de Rio Preto.</h1>
+        <p class="hero-lead">
+          Das receitas guardadas em família na Síria ao acolhimento caloroso no coração de
+          São José do Rio Preto. Pastas frescas, esfihas abertas na hora, carnes na brasa e
+          doces aromáticos feitos com alma, tempo e especiarias verdadeiras.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#cardapio" class="btn btn-primary btn-lg">Explorar o Cardápio</a>
+          <a href="#reservar" class="btn btn-ghost btn-lg">Reservar uma Mesa</a>
+        </div>
+
+        <dl class="hero-stats">
+          <div>
+            <dt>Origem</dt>
+            <dd>Proprietários sírios</dd>
+          </div>
+          <div>
+            <dt>Preparo</dt>
+            <dd>Artesanal &amp; diário</dd>
+          </div>
+          <div>
+            <dt>Cidade</dt>
+            <dd>São José do Rio Preto</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Pillars Strip -->
+    <section class="pillars" aria-label="Pilares do Zeina Restaurante">
+      <div class="container pillars-grid">
+        <article class="pillar-card">
+          <div class="pillar-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6 5.6 18.4" />
+            </svg>
+          </div>
+          <h2>Especiarias do Levante</h2>
+          <p>Sumagre cítrico, za'atar aromático, pimenta síria, melado de romã e azeite extra virgem em equilíbrio perfeito.</p>
+        </article>
+
+        <article class="pillar-card">
+          <div class="pillar-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <path d="M12 3c4 4 6 7 6 10a6 6 0 1 1-12 0c0-3 2-6 6-10Z" />
+            </svg>
+          </div>
+          <h2>Brasa &amp; Forno Quente</h2>
+          <p>Kaftas, michuis e shish taouk grelhados no ponto certo, servidos sobre pão sírio tostado e molho de tahine.</p>
+        </article>
+
+        <article class="pillar-card">
+          <div class="pillar-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <path d="M4 12a8 8 0 0 1 16 0v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-5Z" />
+              <path d="M8 19v2M16 19v2" />
+            </svg>
+          </div>
+          <h2>Hospitalidade Síria</h2>
+          <p>Na nossa tradição familiar, receber bem à mesa é um gesto de carinho. Cada prato chega para ser compartilhado sem pressa com quem você ama.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="section story-section" id="historia">
+      <div class="container story-grid">
+        <div class="story-media-wrap">
+          <div class="arch-frame">
+            <img
+              src="assets/images/story-spices.svg"
+              alt="Especiarias sírias autênticas como sumagre, za'atar, pistache, romã e azeite"
+              loading="lazy"
+            />
+          </div>
+          <div class="story-floating-card">
+            <span class="arabic-script" lang="ar" dir="rtl">طعم الأصالة السورية</span>
+            <p>“Comida é memória: trazemos o perfume da cozinha da nossa família direto para Rio Preto.”</p>
+          </div>
+        </div>
+
+        <div class="story-content">
+          <span class="eyebrow">Nossa História</span>
+          <h2>De mãos sírias para o coração de São José do Rio Preto</h2>
+          <p>
+            O <strong>Zeina Restaurante</strong> nasceu do desejo de uma família cristã síria de manter viva,
+            no interior paulista, a verdadeira culinária do Levante — aquela que começa cedo na cozinha,
+            tostando gergelim para o tahine, socando nozes para a muhammara e abrindo a massa fina das
+            esfihas uma a uma.
+          </p>
+          <p>
+            Mais do que servir pratos árabes clássicos, nossa casa celebra o encontro à mesa. Na tradição
+            síria, o banquete começa com o <em>mezze</em> — pequenas porções coloridas que convidam todos a
+            compartilhar histórias enquanto o pão quente sai do forno.
+          </p>
+
+          <blockquote class="story-quote">
+            <p>
+              “Zeina significa beleza e graça em árabe. É exatamente o que buscamos colocar em cada
+              temperinho, em cada travessa e em cada boas-vindas.”
+            </p>
+            <cite>— Família fundadora do Zeina Restaurante</cite>
+          </blockquote>
+
+          <div class="story-highlights">
+            <div class="highlight-item">
+              <strong>Receitas Originais</strong>
+              <span>Temperos tradicionais da Síria sem adaptações artificiais</span>
+            </div>
+            <div class="highlight-item">
+              <strong>Opções para Todos</strong>
+              <span>Ampla seleção vegetariana, vegana e cortes selecionados</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Signature Specialties Showcase -->
+    <section class="section specialties-section" id="especialidades">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="eyebrow">Sabores em Destaque</span>
+          <h2>O que torna a nossa mesa inesquecível</h2>
+          <p>
+            Conheça alguns dos pratos mais pedidos pelos clientes de Rio Preto e região.
+          </p>
+        </div>
+
+        <div class="specialties-grid">
+          <article class="specialty-card">
+            <div class="specialty-img">
+              <img
+                src="assets/images/hero-mezze.svg"
+                alt="Mesa de mezze sírio com homus, babaganuche, muhammara e tabule"
+                loading="lazy"
+              />
+              <span class="specialty-tag">Para Compartilhar</span>
+            </div>
+            <div class="specialty-body">
+              <div class="specialty-title-row">
+                <h3>Festival de Mezze</h3>
+                <span class="arabic-name" lang="ar" dir="rtl">مقبلات شامية</span>
+              </div>
+              <p>
+                Homus sedoso com grão-de-bico e azeite, babaganuche defumado na brasa, coalhada seca
+                com hortelã e muhammara de pimentão assado com nozes e melado de romã.
+              </p>
+            </div>
+          </article>
+
+          <article class="specialty-card">
+            <div class="specialty-img">
+              <img
+                src="assets/images/grill-feast.svg"
+                alt="Espetos sírios na brasa de kafta e shish taouk com pão sírio e molho de tahine"
+                loading="lazy"
+              />
+              <span class="specialty-tag">Na Brasa</span>
+            </div>
+            <div class="specialty-body">
+              <div class="specialty-title-row">
+                <h3>Kafta &amp; Shish Taouk</h3>
+                <span class="arabic-name" lang="ar" dir="rtl">مشاوي مشكلة</span>
+              </div>
+              <p>
+                Espetos preparados com carne bovina selecionada, salsinha e pimenta síria, além de
+                cubos de frango marinados no iogurte, alho e limão, assados no carvão.
+              </p>
+            </div>
+          </article>
+
+          <article class="specialty-card">
+            <div class="specialty-img">
+              <img
+                src="assets/images/sweets-knefe.svg"
+                alt="Knefe quentinho e baklava síria de pistache com café árabe com cardamomo"
+                loading="lazy"
+              />
+              <span class="specialty-tag">Confeitaria Síria</span>
+            </div>
+            <div class="specialty-body">
+              <div class="specialty-title-row">
+                <h3>Knefe &amp; Baklava de Pistache</h3>
+                <span class="arabic-name" lang="ar" dir="rtl">كنافة وبقلاوة</span>
+              </div>
+              <p>
+                Massa fina e crocante banhada em calda aromática de flor de laranjeira, queijo
+                derretido no ponto exato e pistaches verdes selecionados, perfeita com café árabe.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Menu Section -->
+    <section class="section menu-section" id="cardapio">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Cardápio Artesanal</span>
+            <h2>Escolha seus pratos favoritos</h2>
+          </div>
+          <p class="menu-helper-note">
+            Toque em <strong>+ Adicionar</strong> para montar sua lista de pedido e enviar diretamente pelo WhatsApp.
+          </p>
+        </div>
+
+        <!-- Menu Controls -->
+        <div class="menu-controls" role="region" aria-label="Filtros do cardápio">
+          <div class="category-tabs" id="menu-tabs" role="tablist" aria-label="Categorias do cardápio">
+            <button type="button" class="tab-btn active" role="tab" aria-selected="true" data-category="todos">Todos</button>
+            <button type="button" class="tab-btn" role="tab" aria-selected="false" data-category="mezze">Mezze &amp; Pastas</button>
+            <button type="button" class="tab-btn" role="tab" aria-selected="false" data-category="esfihas">Esfihas &amp; Kibes</button>
+            <button type="button" class="tab-btn" role="tab" aria-selected="false" data-category="pratos">Grelhados &amp; Pratos</button>
+            <button type="button" class="tab-btn" role="tab" aria-selected="false" data-category="combos">Combos</button>
+            <button type="button" class="tab-btn" role="tab" aria-selected="false" data-category="doces">Doces &amp; Bebidas</button>
+          </div>
+
+          <div class="menu-filters-right">
+            <label class="search-box">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="11" cy="11" r="7" />
+                <path d="m20 20-3.5-3.5" />
+              </svg>
+              <input type="search" id="menu-search" placeholder="Buscar prato ou ingrediente..." aria-label="Buscar no cardápio" />
+            </label>
+
+            <label class="veg-toggle">
+              <input type="checkbox" id="veg-only-checkbox" />
+              <span>Apenas vegetarianos</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Menu Grid (populated by script.js) -->
+        <div class="menu-grid" id="menu-grid" aria-live="polite"></div>
+
+        <p class="menu-empty" id="menu-empty" hidden>
+          Nenhum prato encontrado com esse filtro. Tente outra palavra ou selecione "Todos".
+        </p>
+
+        <p class="placeholder-disclaimer">
+          * Valores e disponibilidade podem variar conforme o dia. Consulte os preços atualizados da casa ao confirmar seu pedido ou reserva.
+        </p>
+      </div>
+    </section>
+
+    <!-- Catering & Events Banner -->
+    <section class="section events-section" id="eventos">
+      <div class="container events-card">
+        <div class="events-content">
+          <span class="eyebrow eyebrow-light">Encomendas &amp; Celebrações</span>
+          <h2>Leve uma autêntica Mesa Síria para o seu evento em Rio Preto</h2>
+          <p>
+            Aniversários, almoços em família, confraternizações e eventos corporativos em
+            São José do Rio Preto e região. Preparamos travessas fartas de homus, coalhada,
+            kibe assado na travessa, charutinhos de folha de uva, esfihas e caixas de doces sírios.
+          </p>
+          <ul class="events-list">
+            <li>Travessas personalizadas para 10, 20 ou 40 pessoas</li>
+            <li>Bandejas de esfihas abertas, fechadas e mini kibes fresquinhos</li>
+            <li>Encomendas programadas com retirada ou entrega combinada</li>
+          </ul>
+          <div class="events-actions">
+            <button type="button" class="btn btn-gold btn-lg" id="event-quote-btn">
+              Solicitar Orçamento de Evento
+            </button>
+          </div>
+        </div>
+
+        <div class="events-visual" aria-hidden="true">
+          <div class="geometric-medallion">
+            <span class="medallion-arabic" lang="ar" dir="rtl">وليمة سورية</span>
+            <span class="medallion-text">Mesas &amp; Bandejas<br />Sob Encomenda</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials-section" aria-label="Avaliações de clientes">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="eyebrow">Acolhimento em cada detalhe</span>
+          <h2>O carinho de quem já provou</h2>
+        </div>
+
+        <div class="testimonials-grid">
+          <figure class="testimonial-card">
+            <blockquote>
+              “O melhor homus e a melhor muhammara que já comi em São José do Rio Preto. Dá para sentir
+              que tudo é feito na hora com tempero de verdade.”
+            </blockquote>
+            <figcaption>
+              <strong>Mariana S.</strong>
+              <span>Cliente em Rio Preto</span>
+            </figcaption>
+          </figure>
+
+          <figure class="testimonial-card">
+            <blockquote>
+              “Atendimento extremamente acolhedor pelos próprios donos. O kibe assado com coalhada seca e
+              o chá de hortelã nos fizeram sentir em uma casa síria.”
+            </blockquote>
+            <figcaption>
+              <strong>Rafael &amp; Camila M.</strong>
+              <span>Jantar de família</span>
+            </figcaption>
+          </figure>
+
+          <figure class="testimonial-card">
+            <blockquote>
+              “Encomendamos uma mesa árabe completa para um aniversário e foi o assunto da festa inteira.
+              Esfihas macias e baklava de pistache impecável.”
+            </blockquote>
+            <figcaption>
+              <strong>Helena T.</strong>
+              <span>Encomenda para evento</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location, Hours & Reservation Section -->
+    <section class="section contact-section" id="contato">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <span class="eyebrow">Visite o Zeina</span>
+          <h2>Estamos esperando você em São José do Rio Preto</h2>
+          <p class="contact-intro">
+            Venha almoçar, jantar com a família ou passar para buscar suas esfihas e pastas favoritas.
+          </p>
+
+          <div class="info-cards">
+            <div class="info-box">
+              <h3>Endereço</h3>
+              <p>Rua Antônio de Godoy, 2936 — Centro</p>
+              <p>São José do Rio Preto — SP, CEP 15015-100</p>
+              <small class="muted-note">
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=Rua+Ant%C3%B4nio+de+Godoy+2936+Centro+S%C3%A3o+Jos%C3%A9+do+Rio+Preto+SP"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style="text-decoration: underline;"
+                >
+                  Abrir rota no Google Maps
+                </a>
+              </small>
+            </div>
+
+            <div class="info-box">
+              <h3>Horário de Funcionamento</h3>
+              <p>Segunda a Sexta: 09h00 às 21h00</p>
+              <p>Sábado e Domingo: 09h00 às 15h00</p>
+              <small class="muted-note">Atendimento no local e pedidos para retirada ou delivery</small>
+            </div>
+
+            <div class="info-box">
+              <h3>Telefone &amp; WhatsApp</h3>
+              <p><a href="tel:+5517996516343" id="phone-display">(17) 99651-6343</a></p>
+              <small class="muted-note">
+                <a
+                  href="https://wa.me/5517996516343"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style="text-decoration: underline;"
+                >
+                  Conversar pelo WhatsApp
+                </a>
+              </small>
+            </div>
+
+            <div class="info-box">
+              <h3>Instagram</h3>
+              <p>
+                <a
+                  href="https://www.instagram.com/zeinaculinariaarabe/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style="text-decoration: underline;"
+                >
+                  @zeinaculinariaarabe
+                </a>
+              </p>
+              <small class="muted-note">Zeina Culinária Árabe — novidades e pratos do dia</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reservation Form -->
+        <div class="reservation-card" id="reservar">
+          <div class="reservation-header">
+            <span class="eyebrow">Reserva de Mesa</span>
+            <h3>Reserve seu lugar à mesa</h3>
+            <p>Preencha os dados abaixo para pré-agendar sua mesa ou confirmar pelo WhatsApp.</p>
+          </div>
+
+          <form id="reservation-form" class="reservation-form" novalidate>
+            <div class="form-row">
+              <label>
+                <span>Seu nome *</span>
+                <input type="text" name="name" id="res-name" placeholder="Ex.: João Paulo" required />
+              </label>
+              <label>
+                <span>WhatsApp / Telefone *</span>
+                <input type="tel" name="phone" id="res-phone" placeholder="(17) 99999-9999" required />
+              </label>
+            </div>
+
+            <div class="form-row form-row-3">
+              <label>
+                <span>Data *</span>
+                <input type="date" name="date" id="res-date" required />
+              </label>
+              <label>
+                <span>Horário *</span>
+                <select name="time" id="res-time" required>
+                  <option value="">Selecione</option>
+                  <option value="11:30">11:30 (Almoço)</option>
+                  <option value="12:30">12:30 (Almoço)</option>
+                  <option value="13:30">13:30 (Almoço)</option>
+                  <option value="18:30">18:30 (Seg a Sex)</option>
+                  <option value="19:30">19:30 (Seg a Sex)</option>
+                </select>
+              </label>
+              <label>
+                <span>Pessoas *</span>
+                <input type="number" name="guests" id="res-guests" min="1" max="30" value="4" required />
+              </label>
+            </div>
+
+            <label>
+              <span>Ocasião ou observações</span>
+              <textarea
+                name="notes"
+                id="res-notes"
+                rows="3"
+                placeholder="Ex.: Aniversário, preferência por área interna, restrição alimentar ou interesse em evento..."
+              ></textarea>
+            </label>
+
+            <button type="submit" class="btn btn-primary btn-lg btn-block">
+              Confirmar Reserva via WhatsApp
+            </button>
+
+            <div class="form-feedback" id="reservation-feedback" role="status" aria-live="polite" hidden></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">Zeina Restaurante <span lang="ar" dir="rtl">زينة</span></span>
+        <p>
+          Culinária síria autêntica, feita com carinho por proprietários sírios em
+          São José do Rio Preto — SP.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Navegação</h4>
+        <a href="#historia">Nossa História</a>
+        <a href="#especialidades">Especialidades</a>
+        <a href="#cardapio">Cardápio</a>
+        <a href="#eventos">Encomendas &amp; Eventos</a>
+        <a href="#reservar">Reservas</a>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Atendimento</h4>
+        <p>Rua Antônio de Godoy, 2936 — Centro</p>
+        <p>São José do Rio Preto, SP • CEP 15015-100</p>
+        <p>WhatsApp: (17) 99651-6343 • @zeinaculinariaarabe</p>
+        <p>Ahlan wa Sahlan — Seja sempre bem-vindo.</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <span>© <span id="current-year"></span> Zeina Restaurante. Todos os direitos reservados.</span>
+        <span>São José do Rio Preto • Tradição Síria</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Slide-over Order / Inquiry Drawer -->
+  <div class="drawer-backdrop" id="cart-backdrop" hidden></div>
+  <aside class="order-drawer" id="order-drawer" aria-label="Sua lista de pedido" aria-hidden="true">
+    <div class="drawer-header">
+      <div>
+        <span class="eyebrow">Seu Pedido</span>
+        <h3>Monte sua Mesa Síria</h3>
+      </div>
+      <button type="button" class="icon-close-btn" id="close-cart-btn" aria-label="Fechar pedido">
+        ✕
+      </button>
+    </div>
+
+    <div class="drawer-body" id="cart-items-container">
+      <!-- Populated by script.js -->
+    </div>
+
+    <div class="drawer-footer">
+      <div class="delivery-mode">
+        <span>Modalidade:</span>
+        <div class="mode-pills">
+          <label><input type="radio" name="order-mode" value="Retirada no balcão" checked /> Retirada</label>
+          <label><input type="radio" name="order-mode" value="Delivery em Rio Preto" /> Delivery</label>
+          <label><input type="radio" name="order-mode" value="Consumir na mesa" /> Na Mesa</label>
+        </div>
+      </div>
+
+      <div class="drawer-total">
+        <span>Subtotal estimado</span>
+        <strong id="cart-total">R$ 0,00</strong>
+      </div>
+
+      <button type="button" class="btn btn-primary btn-lg btn-block" id="send-whatsapp-order" disabled>
+        Enviar Pedido pelo WhatsApp
+      </button>
+      <button type="button" class="btn btn-ghost-dark btn-sm btn-block" id="clear-cart-btn">
+        Limpar lista
+      </button>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
